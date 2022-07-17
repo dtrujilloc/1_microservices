@@ -1,13 +1,13 @@
-package com.tutomicroservices.msproducts;
+package com.tutomicroservices.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MsProductsApplication {
+public class UserApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MsProductsApplication.class, args);
+		SpringApplication.run(UserApplication.class, args);
 	}
 
 }
