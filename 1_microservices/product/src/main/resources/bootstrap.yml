@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-user                     # nombre de la aplicacion de spring-boot. Por medio de este nombre sabe que archivo de configuraciones solicitar en el servidor
+    name: ms-product                  # nombre de la aplicacion de spring-boot. Por medio de este nombre sabe que archivo de configuraciones solicitar en el servidor
 
   # configuracion necesaria para convertir proyecto en cliente de configuraciones (dependencia de config-client)
   cloud:
