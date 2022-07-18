@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: config-server
+  #configuracion necesaria para convertir proyecto en servidor de configuraciones (dependencia de config-server)
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dtrujilloc/1_tuto_microservices       # ruta del servidor donde estan las configuraciones
+          searchPaths: 2_server_config/configdata                        # carpeta o ruta donde estan los archivos de configuracion
+#          username: ${GIT_USER}                                         # usuario del repositorio donde estan los archivos de configuracion (variable de entorno de intellij)
+#          password: ${GIT_PASS}                                         # password del repositorio donde estan los archivos de configuracion (variable de entorno de intellij)
+          default-label: "master"                                       # rama del repositorio en donde va realizar la busqueda de los archivos de configuracion
+
+  #configuracion para habilitar seguridad de acceso en el microservicio (dependencia de security)
+  security:
+    user:
+      name: root
+      password: secret
