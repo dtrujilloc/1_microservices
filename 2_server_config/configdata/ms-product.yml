@@ -1,5 +1,5 @@
 ms-product:
-  description: microservicio de productos
+  property: microservicio de productos
 server:
   port: 8083
 
